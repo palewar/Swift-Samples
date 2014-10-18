@@ -14,6 +14,8 @@
 		0A9A4BC019F2785B00F81929 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A9A4BBF19F2785B00F81929 /* Images.xcassets */; };
 		0A9A4BC319F2785B00F81929 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9A4BC119F2785B00F81929 /* LaunchScreen.xib */; };
 		0A9A4BCF19F2785B00F81929 /* MultipleDetailViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A4BCE19F2785B00F81929 /* MultipleDetailViewsTests.swift */; };
+		0A9A4BD919F2897300F81929 /* TableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A4BD819F2897300F81929 /* TableViewController2.swift */; };
+		0A9A4BDB19F291A400F81929 /* DetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A4BDA19F291A400F81929 /* DetailViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		0A9A4BC819F2785B00F81929 /* MultipleDetailViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipleDetailViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A9A4BCD19F2785B00F81929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A9A4BCE19F2785B00F81929 /* MultipleDetailViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleDetailViewsTests.swift; sourceTree = "<group>"; };
+		0A9A4BD819F2897300F81929 /* TableViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController2.swift; sourceTree = "<group>"; };
+		0A9A4BDA19F291A400F81929 /* DetailViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +85,9 @@
 			children = (
 				0A9A4BB619F2785B00F81929 /* AppDelegate.swift */,
 				0A9A4BB819F2785B00F81929 /* MasterViewController.swift */,
+				0A9A4BD819F2897300F81929 /* TableViewController2.swift */,
 				0A9A4BBA19F2785B00F81929 /* DetailViewController.swift */,
+				0A9A4BDA19F291A400F81929 /* DetailViewController2.swift */,
 				0A9A4BBC19F2785B00F81929 /* Main.storyboard */,
 				0A9A4BBF19F2785B00F81929 /* Images.xcassets */,
 				0A9A4BC119F2785B00F81929 /* LaunchScreen.xib */,
@@ -217,6 +223,8 @@
 			files = (
 				0A9A4BBB19F2785B00F81929 /* DetailViewController.swift in Sources */,
 				0A9A4BB919F2785B00F81929 /* MasterViewController.swift in Sources */,
+				0A9A4BD919F2897300F81929 /* TableViewController2.swift in Sources */,
+				0A9A4BDB19F291A400F81929 /* DetailViewController2.swift in Sources */,
 				0A9A4BB719F2785B00F81929 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

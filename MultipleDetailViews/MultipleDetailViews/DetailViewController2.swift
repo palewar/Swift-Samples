@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController2: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
 

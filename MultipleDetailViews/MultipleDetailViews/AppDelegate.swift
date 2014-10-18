@@ -3,7 +3,7 @@
 //  MultipleDetailViews
 //
 //  Created by Sachin Palewar on 10/18/14.
-//  Copyright (c) 2014 PTS. All rights reserved.
+//  www.SwiftWala.com
 //
 
 import UIKit
