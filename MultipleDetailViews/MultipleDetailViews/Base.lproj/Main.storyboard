@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Master-->
+        <!--Navigation Controller-->
         <scene sceneID="pY4-Hu-kfo">
             <objects>
-                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
+                <navigationController id="RMx-3f-FxP" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="-1200" y="-1272"/>
         </scene>
-        <!--Master-->
+        <!--TableView1-->
         <scene sceneID="smW-Zh-WAh">
             <objects>
-                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="MultipleDetailViews" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="TableView1" clearsSelectionOnViewWillAppear="NO" id="7bK-jq-Zjz" customClass="MasterViewController" customModule="MultipleDetailViews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="r7i-6Z-zg0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +141,7 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="Zdf-7t-Un8"/>
+                    <navigationItem key="navigationItem" title="TableView1" id="Zdf-7t-Un8"/>
                     <connections>
                         <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail1" id="ExQ-MK-aJu"/>
                         <segue destination="2QC-Js-4iA" kind="showDetail" identifier="showDetail2" id="aMD-Sm-AXY"/>
@@ -152,10 +152,10 @@
             </objects>
             <point key="canvasLocation" x="551" y="-1272"/>
         </scene>
-        <!--Master-->
+        <!--TableView2-->
         <scene sceneID="zDw-en-5bP">
             <objects>
-                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="zdc-Eb-Y5k" customClass="TableViewController2" customModule="MultipleDetailViews" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="TableView2" clearsSelectionOnViewWillAppear="NO" id="zdc-Eb-Y5k" customClass="TableViewController2" customModule="MultipleDetailViews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hBQ-xN-evV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,7 +186,7 @@
                             <outlet property="delegate" destination="zdc-Eb-Y5k" id="g7N-OV-Pbe"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="Biy-D4-u2E"/>
+                    <navigationItem key="navigationItem" title="TableView2" id="Biy-D4-u2E"/>
                     <connections>
                         <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail1fromTableView2" id="p4V-wC-Eu9"/>
                         <segue destination="2QC-Js-4iA" kind="showDetail" identifier="showDetail2fromTableView2" id="Ti9-yv-nhf"/>
