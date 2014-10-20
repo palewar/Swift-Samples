@@ -49,7 +49,7 @@ class MasterViewController: UITableViewController {
     // MARK: - Segues
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetail" {
+        if segue.identifier == "showDetail1" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
 //                let object = objects[indexPath.row] as NSDate
                 let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController
@@ -57,6 +57,10 @@ class MasterViewController: UITableViewController {
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
+        } else if segue.identifier == "showDetail2" {
+            let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController2
+            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+            controller.navigationItem.leftItemsSupplementBackButton = true
         }
     }
 
