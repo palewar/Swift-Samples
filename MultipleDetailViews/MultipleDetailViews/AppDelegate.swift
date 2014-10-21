@@ -58,6 +58,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         }
         return false
     }
+    
+    func splitViewController(splitViewController: UISplitViewController, separateSecondaryViewControllerFromPrimaryViewController primaryViewController: UIViewController!) -> UIViewController? {
+        if let primaryAsNavController = primaryViewController as? UINavigationController {
+            if let topAsTableViewController = primaryAsNavController.topViewController as? TableViewController2 {
+                return (UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("detail1Nav") as UIViewController)
+            }
+        }
+    return nil
+    }
 
 }
 
