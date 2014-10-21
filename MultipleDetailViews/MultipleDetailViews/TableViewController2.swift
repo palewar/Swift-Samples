@@ -2,7 +2,7 @@
 //  TableViewController2.swift
 //  MultipleDetailViews
 //
-//  Created by Sachin Palewar on 10/18/14.
+//  Code provided As Is, Do whatever you want with it, but do it at your own risk
 //  www.SwiftWala.com
 //
 
