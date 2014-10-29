@@ -68,14 +68,14 @@ class MasterViewController: UITableViewController {
         
         // Set appropriate labels for the cells.
         if indexPath.row == 0 {
-            cell.textLabel?.text = "Second Table View Controller"
+            cell.textLabel.text = "Second Table View Controller"
             cell.accessoryType = .DisclosureIndicator
         }
         else if indexPath.row == 1 {
-            cell.textLabel?.text = "Detail View Controller One"
+            cell.textLabel.text = "Detail View Controller One"
         }
         else {
-            cell.textLabel?.text = "Detail View Controller Two"
+            cell.textLabel.text = "Detail View Controller Two"
             
         }
         
