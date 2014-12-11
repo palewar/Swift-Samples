@@ -45,10 +45,10 @@ class TableViewController2: UITableViewController {
 
         // Set appropriate labels for the cells.
         if indexPath.row == 0 {
-            cell.textLabel.text = "Detail View Controller One"
+            cell.textLabel?.text = "Detail View Controller One"
         }
         else {
-            cell.textLabel.text = "Detail View Controller Two"
+            cell.textLabel?.text = "Detail View Controller Two"
         }
 
         return cell
