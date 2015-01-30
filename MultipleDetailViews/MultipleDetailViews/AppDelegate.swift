@@ -16,10 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let splitViewController = self.window!.rootViewController as UISplitViewController
-        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as UINavigationController
-        navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
-        splitViewController.delegate = self
+        if let splitViewController = self.window!.rootViewController as? UISplitViewController {
+            let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as UINavigationController
+            navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
+            //
+            // splitViewController.delegate = self
+            splitViewController.delegate = splitViewController
+        }
         return true
     }
 
@@ -44,6 +47,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
+    /*
+    // this code is still required and is moved to SplitVieSupport, which is set as UISplitViewControllerDelegate
 
     // MARK: - Split view
 
@@ -70,5 +76,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     return nil
     }
 
+    */
 }
 

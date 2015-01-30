@@ -40,16 +40,34 @@ class MasterViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail1" {
             if let indexPath = self.tableView.indexPathForSelectedRow() {
-
-                let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController
-
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
+                var controller: DetailViewController!
+                if let navController = segue.destinationViewController as? UINavigationController {
+                    
+                    // this code will run on all devices, where splitview is implemented
+                    // ios8 iPhone, iPad
+                    // ios7 iPad
+                    controller = navController.topViewController as DetailViewController
+                    controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+                    controller.navigationItem.leftItemsSupplementBackButton = true
+                } else {
+                    
+                    // this code will run on all devices, where splitview is not implemented
+                    // ios7 iPhone
+                    controller = segue.destinationViewController as DetailViewController
+                }
+                // additional setup of detail view goes here
+                
             }
         } else if segue.identifier == "showDetail2" {
-            let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController2
-            controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-            controller.navigationItem.leftItemsSupplementBackButton = true
+            var controller: DetailViewController2!
+            if let navController = segue.destinationViewController as? UINavigationController {
+                controller = navController.topViewController as DetailViewController2
+                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            } else {
+                controller = segue.destinationViewController as DetailViewController2
+            }
+            // additional setup of detail view goes here 
         }
     }
 
