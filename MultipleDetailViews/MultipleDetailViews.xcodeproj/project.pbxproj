@@ -16,6 +16,7 @@
 		0A9A4BCF19F2785B00F81929 /* MultipleDetailViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A4BCE19F2785B00F81929 /* MultipleDetailViewsTests.swift */; };
 		0A9A4BD919F2897300F81929 /* TableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A4BD819F2897300F81929 /* TableViewController2.swift */; };
 		0A9A4BDB19F291A400F81929 /* DetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A4BDA19F291A400F81929 /* DetailViewController2.swift */; };
+		4D3201591A7B6A200074E621 /* SplitViewSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3201581A7B6A200074E621 /* SplitViewSupport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		0A9A4BCE19F2785B00F81929 /* MultipleDetailViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleDetailViewsTests.swift; sourceTree = "<group>"; };
 		0A9A4BD819F2897300F81929 /* TableViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController2.swift; sourceTree = "<group>"; };
 		0A9A4BDA19F291A400F81929 /* DetailViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController2.swift; sourceTree = "<group>"; };
+		4D3201581A7B6A200074E621 /* SplitViewSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewSupport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		0A9A4BB319F2785B00F81929 /* MultipleDetailViews */ = {
 			isa = PBXGroup;
 			children = (
+				4D3201581A7B6A200074E621 /* SplitViewSupport.swift */,
 				0A9A4BB619F2785B00F81929 /* AppDelegate.swift */,
 				0A9A4BB819F2785B00F81929 /* MasterViewController.swift */,
 				0A9A4BD819F2897300F81929 /* TableViewController2.swift */,
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A9A4BBB19F2785B00F81929 /* DetailViewController.swift in Sources */,
+				4D3201591A7B6A200074E621 /* SplitViewSupport.swift in Sources */,
 				0A9A4BB919F2785B00F81929 /* MasterViewController.swift in Sources */,
 				0A9A4BD919F2897300F81929 /* TableViewController2.swift in Sources */,
 				0A9A4BDB19F291A400F81929 /* DetailViewController2.swift in Sources */,
@@ -350,7 +354,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				INFOPLIST_FILE = MultipleDetailViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -360,7 +366,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				INFOPLIST_FILE = MultipleDetailViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -419,6 +427,7 @@
 				0A9A4BD419F2785B00F81929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A9A4BD519F2785B00F81929 /* Build configuration list for PBXNativeTarget "MultipleDetailViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +436,7 @@
 				0A9A4BD719F2785B00F81929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
