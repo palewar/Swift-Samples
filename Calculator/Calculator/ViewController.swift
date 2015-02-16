@@ -3,8 +3,6 @@
 //  Calculator
 //
 //  Created by Sachin Palewar on 2/12/15.
-//  Copyright (c) 2015 SwiftWala. All rights reserved.
-//
 
 import UIKit
 
@@ -18,9 +16,12 @@ class ViewController: UIViewController {
 
     var displayValue: Double {
         get {
+            //notice use of ! twice in below line. If you get that, then you have truely understood optionals :-)
             return NSNumberFormatter().numberFromString(displayLabel.text!)!.doubleValue
         }
         set {
+            // Notice how we are using a Property Setter to perform additional tasks while 
+            //setting value for the property
             displayLabel.text = "\(newValue)"
             isFirstDigit = true
             operation = "="
@@ -28,10 +29,12 @@ class ViewController: UIViewController {
         }
     }
 
+    //This single IBAction function is tied to all the digit buttons
     @IBAction func appendDigit(sender: UIButton) {
 
         let digit = sender.currentTitle!
-
+        //Notice use of ternery operator in below line which results in a single line code
+        //instead of usual if-else multiple lines
         displayLabel.text = isFirstDigit ? digit : displayLabel.text! + digit
         isFirstDigit = false
     }
