@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         set {
             // Notice how we are using a Property Setter to perform additional tasks while 
             //setting value for the property
-            displayLabel.text = "\(newValue)"
+            displayLabel.text  = "\(newValue)"
             isFirstDigit = true
             operation = "="
 
