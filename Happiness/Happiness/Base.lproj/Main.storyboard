@@ -4,18 +4,43 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Happiness View Controller-->
+        <!--View Controller-->
         <scene sceneID="m8c-Hq-TSx">
             <objects>
-                <viewController id="C4W-6J-4Y2" customClass="HappinessViewController" customModule="Happiness" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="C4W-6J-4Y2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QK6-xK-xac"/>
                         <viewControllerLayoutGuide type="bottom" id="AQu-Vo-hde"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="u1J-n5-qMq" customClass="FaceView" customModule="Happiness" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="u1J-n5-qMq">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6ed-5j-Jvb" customClass="FaceView" customModule="Happiness" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ed-5j-Jvb" firstAttribute="leading" secondItem="u1J-n5-qMq" secondAttribute="leading" id="2xq-Rj-2WH"/>
+                            <constraint firstItem="6ed-5j-Jvb" firstAttribute="top" secondItem="u1J-n5-qMq" secondAttribute="top" id="A1g-nq-1V1"/>
+                            <constraint firstItem="6ed-5j-Jvb" firstAttribute="bottom" secondItem="AQu-Vo-hde" secondAttribute="top" id="B0o-u8-HCO"/>
+                            <constraint firstAttribute="trailing" secondItem="6ed-5j-Jvb" secondAttribute="trailing" id="kQ9-dV-p8d"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="scale">
+                                <real key="value" value="0.80000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1V5-z3-iKA" userLabel="First Responder" sceneMemberID="firstResponder"/>

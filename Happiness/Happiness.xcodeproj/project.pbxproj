@@ -13,7 +13,6 @@
 		0A2C7F7D1A9C791B006FA939 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2C7F7B1A9C791B006FA939 /* LaunchScreen.xib */; };
 		0A2C7F891A9C791B006FA939 /* HappinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C7F881A9C791B006FA939 /* HappinessTests.swift */; };
 		0A2C7F931A9C79D9006FA939 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C7F921A9C79D9006FA939 /* FaceView.swift */; };
-		0A2C7F951A9C7CEB006FA939 /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2C7F941A9C7CEB006FA939 /* HappinessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,6 @@
 		0A2C7F871A9C791B006FA939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A2C7F881A9C791B006FA939 /* HappinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessTests.swift; sourceTree = "<group>"; };
 		0A2C7F921A9C79D9006FA939 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
-		0A2C7F941A9C7CEB006FA939 /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +79,6 @@
 			children = (
 				0A2C7F761A9C791B006FA939 /* Main.storyboard */,
 				0A2C7F921A9C79D9006FA939 /* FaceView.swift */,
-				0A2C7F941A9C7CEB006FA939 /* HappinessViewController.swift */,
 				0A2C7F701A9C791B006FA939 /* Supporting Files */,
 			);
 			path = Happiness;
@@ -216,7 +213,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A2C7F731A9C791B006FA939 /* AppDelegate.swift in Sources */,
-				0A2C7F951A9C7CEB006FA939 /* HappinessViewController.swift in Sources */,
 				0A2C7F931A9C79D9006FA939 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +407,7 @@
 				0A2C7F8E1A9C791B006FA939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A2C7F8F1A9C791B006FA939 /* Build configuration list for PBXNativeTarget "HappinessTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +416,7 @@
 				0A2C7F911A9C791B006FA939 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

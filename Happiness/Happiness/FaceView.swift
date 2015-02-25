@@ -8,12 +8,21 @@
 
 import UIKit
 
-class FaceView: UIView {
+// @IBDesignable is not required, but it's used to render FaceView in Storyboard
+// without compiling. Very useful feature along with @IBInspectable introduced 
+// with XCode 6. Read about it at:
+// http://nshipster.com/ibinspectable-ibdesignable/
 
-    var scale: CGFloat = 0.90 { didSet { setNeedsDisplay() } }
-    var lineWidth: CGFloat = 3 { didSet { setNeedsDisplay() } }
-    var color: UIColor = UIColor.blueColor() { didSet { setNeedsDisplay() } }
+@IBDesignable class FaceView: UIView {
+
+    //@IBInspectable is used to make these properties available in Attributes Inspector
+    //while using Storyboard.
+    @IBInspectable var scale: CGFloat = 0.90 { didSet { setNeedsDisplay() } }
+    @IBInspectable var lineWidth: CGFloat = 3 { didSet { setNeedsDisplay() } }
+    @IBInspectable var color: UIColor = UIColor.blueColor() { didSet { setNeedsDisplay() } }
+
     var smiliness: Double =  0.98 { didSet { setNeedsDisplay() }}
+
     var faceCenter: CGPoint {
         return convertPoint(center, fromView: superview)
     }
@@ -22,6 +31,7 @@ class FaceView: UIView {
         return min(bounds.size.width, bounds.size.height) / 2 * scale
     }
 
+    //A common struct to store our constants
     private struct Scaling {
         static let FaceRadiusToEyeRadiusRatio: CGFloat = 10
         static let FaceRadiusToEyeOffsetRatio: CGFloat = 3
@@ -69,8 +79,6 @@ class FaceView: UIView {
         return path
     }
 
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
 
         // Drawing Face
