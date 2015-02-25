@@ -8,10 +8,10 @@
 
 import UIKit
 
-// @IBDesignable is not required, but it's used to render FaceView in Storyboard
-// without compiling. Very useful feature along with @IBInspectable introduced 
-// with XCode 6. Read about it at:
-// http://nshipster.com/ibinspectable-ibdesignable/
+//@IBDesignable is not required, but it's used to render FaceView in Storyboard
+//without compiling. Very useful feature along with @IBInspectable introduced
+//with XCode 6. Read about it at:
+//http://nshipster.com/ibinspectable-ibdesignable/
 
 @IBDesignable class FaceView: UIView {
 
@@ -21,7 +21,8 @@ import UIKit
     @IBInspectable var lineWidth: CGFloat = 3 { didSet { setNeedsDisplay() } }
     @IBInspectable var color: UIColor = UIColor.blueColor() { didSet { setNeedsDisplay() } }
 
-    var smiliness: Double =  0.98 { didSet { setNeedsDisplay() }}
+    // -1 smiliness means really sad. 0 means neither sad, neither happy. 1 means really happy
+    @IBInspectable var smiliness: Double =  0.98 { didSet { setNeedsDisplay() }}
 
     var faceCenter: CGPoint {
         return convertPoint(center, fromView: superview)
@@ -31,7 +32,7 @@ import UIKit
         return min(bounds.size.width, bounds.size.height) / 2 * scale
     }
 
-    //A common struct to store our constants
+    //Common struct to store all our constants
     private struct Scaling {
         static let FaceRadiusToEyeRadiusRatio: CGFloat = 10
         static let FaceRadiusToEyeOffsetRatio: CGFloat = 3
@@ -81,7 +82,7 @@ import UIKit
 
     override func drawRect(rect: CGRect) {
 
-        // Drawing Face
+        //Drawing Face
         let facePath = UIBezierPath(arcCenter: faceCenter, radius: faceRadius, startAngle: 0, endAngle: CGFloat(2 * M_PI), clockwise: true)
         facePath.lineWidth = lineWidth
         color.set()
