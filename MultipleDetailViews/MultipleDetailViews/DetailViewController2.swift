@@ -15,7 +15,6 @@ class DetailViewController2: UIViewController {
 
     var detailItem: AnyObject? {
         didSet {
-            // Update the view.
             self.configureView()
         }
     }
@@ -35,11 +34,7 @@ class DetailViewController2: UIViewController {
         self.configureView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+   
 
 }
 
