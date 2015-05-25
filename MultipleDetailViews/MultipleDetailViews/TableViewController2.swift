@@ -22,7 +22,7 @@ class TableViewController2: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
         // Set appropriate labels for the cells.
         if indexPath.row == 0 {
@@ -50,13 +50,13 @@ class TableViewController2: UITableViewController {
        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
       
         if segue.identifier == "showDetail1fromTableView2" {
-            let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
             controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
             controller.navigationItem.leftItemsSupplementBackButton = true
             controller.view.backgroundColor = UIColor.purpleColor()
             
         } else if segue.identifier == "showDetail2fromTableView2" {
-            let controller = (segue.destinationViewController as UINavigationController).topViewController as DetailViewController2
+            let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController2
             controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
             controller.navigationItem.leftItemsSupplementBackButton = true
             controller.view.backgroundColor = UIColor.orangeColor()
